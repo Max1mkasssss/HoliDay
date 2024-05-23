@@ -34,7 +34,7 @@ span, p, h1, h2, h3, a {
 }
 
 .foto-background {
-  background-image: url(/img/main-bg.png);
+  background-image: url(./img/main-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
