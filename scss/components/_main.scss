@@ -1,0 +1,51 @@
+.main{ 
+    padding-top: 63px;
+    background-color: $main-color;
+}
+h2{ 
+    color: rgb(51, 51, 51);
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.foto-list{ 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    &__item{ 
+        width: 194px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        // outline: 2px solid red;
+        img{ 
+            margin-bottom: 13px;
+        }
+        span{ 
+            margin: 13px;
+            color: rgb(51, 51, 51);
+            font-family: "Montserrat", sans-serif;
+            font-size: 14.01px;
+            font-weight: 700;
+            line-height: 17px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+        p{ 
+            color: rgb(102, 102, 102);
+            font-family: "Roboto", "Montserrat", sans-serif;
+            font-size: 14.01px;
+            font-weight: 300;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+}
