@@ -1,36 +1,39 @@
-.foto-background{ 
+// Mobile
+
+@media (max-width: 520px) {
+  .foto-background {
     background-image: url(../img/main-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 18px;
     height: 540px;
-}
-.buttons-list{ 
+  }
+  .buttons-list {
     gap: 9px;
     justify-content: center;
-    .circule{ 
-        border-radius: 30px;
-        border: 2px solid $main-color;;
-        background: rgba(26, 25, 21, 0);
+    .circule {
+      border-radius: 30px;
+      border: 2px solid $main-color;
+      background: rgba(26, 25, 21, 0);
     }
-    &__item{ 
-        color:  $main-color;
-        font-family: "Montserrat", sans-serif;
-        font-size: 13.99px;
-        font-weight: 700;
-        line-height: 17px;
-        letter-spacing: 0px;
-        text-align: center;
+    &__item {
+      color: $main-color;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13.99px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0px;
+      text-align: center;
 
-        width: 83px;
-        padding: 11px 4px;
+      width: 83px;
+      padding: 11px 4px;
 
-        margin-bottom: 112px;
+      margin-bottom: 112px;
     }
-}
-.logotype{ 
-    color:  $main-color;
+  }
+  .logotype {
+    color: $main-color;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -43,51 +46,76 @@
     justify-content: center;
     padding: 0;
     margin: 0 0 22px 0;
+  }
 }
-.main-h1{ 
-    margin: 0 0 13px 0 ;
-    padding: 0;
 
-    color:  $main-color;
+// Tablet
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .foto-background {
+    background-image: url(/img/header-tablet/tablet-header@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 192dppx) {
+      background-image: url(/img/header-tablet/tablet-header@2x.png);
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 35px;
+    height: 700px;
+  }
+  .buttons-list {
+    gap: 9px;
+    justify-content: center;
+    .circule {
+      border-radius: 30px;
+      border: 2px solid $main-color;
+      background: rgba(26, 25, 21, 0);
+    }
+  }
+  header {
+    position: relative;
+    outline: 2px solid red;
+  }
+  .logotype {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
-    font-size: 30.04px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 37px;
-    letter-spacing: 0px;
+    line-height: 24px;
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
+  }
+  .buttons-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 9px;
+    justify-content: center;
+    .circule {
+      border-radius: 30px;
+      border: 2px solid $main-color;
+      background: rgba(26, 25, 21, 0);
+    }
+    &__item {
+      color: $main-color;
+      font-family: "Montserrat", sans-serif;
+      font-size: 13.99px;
+      font-weight: 700;
+      line-height: 17px;
+      letter-spacing: 0px;
+      text-align: center;
 
-    
-}
-.h1-description{ 
-    color: rgb(255, 255, 255);
-    font-family: "Roboto", "Montserrat", sans-serif;
-    font-size: 18.02px;
-    font-weight: 300;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: center;
+      min-width: 93px;
+      height: 39px;
 
-    width: 247px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 17px;
+      padding: 11px 4px;
+    }
+  }
 }
-.main-button{ 
-
-    border: none;
-    outline: none;
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 0px;
-    text-align: center;
-    min-width: 282px;
-    padding: 13px 38px;
-    height: 43px;
-    
-    background-color: $tomat;
-    border-radius: 30px;
-}
+// Desktop
